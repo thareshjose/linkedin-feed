@@ -1,0 +1,41 @@
+.sidebar__left {
+  flex: 0.2;
+  border: 1px solid lightgray;
+  height: max-content;
+  margin-top: 20px;
+  background-color: white;
+  border-radius: 3px;
+}
+
+.sidebar__userWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 180px;
+  justify-content: flex-start;
+}
+
+.sidebar__avatar {
+  width: 100%;
+  background: linear-gradient(#0093ba 50%, transparent 50%);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.sidebar__userDetails {
+  text-align: center;
+  /* padding: 10px; */
+  width: 100%;
+  border-bottom: 1px solid lightgrey;
+}
+
+.sidebar__userRole {
+  color: grey;
+}
+
+@media only screen and (max-width: 768px) {
+  .sidebar__left {
+    display: none;
+  }
+}

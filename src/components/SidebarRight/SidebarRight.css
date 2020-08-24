@@ -1,0 +1,9 @@
+.sidebar__right {
+  flex: 0.2;
+}
+
+@media only screen and (max-width: 768px) {
+  .sidebar__right {
+    display: none;
+  }
+}

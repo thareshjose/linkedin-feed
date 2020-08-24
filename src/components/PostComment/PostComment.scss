@@ -1,0 +1,123 @@
+.comments {
+  &__newComment {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__avatar {
+    margin: 0 10px 0 0;
+    width: 35px !important;
+    height: 35px !important;
+  }
+
+  &__newInput {
+    border: 1px solid grey !important;
+    border-radius: 30px !important;
+    // padding: 10px;
+    outline: none;
+
+    // border-top
+    flex: 1;
+  }
+
+  &__newCommentBtn {
+    margin: 10px 50px;
+    border-radius: 3px;
+    background-color: rgb(0, 96, 151);
+    color: white;
+    width: 50px;
+    padding: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgba(0, 96, 151, 0.8);
+    }
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    margin: 8px 15px;
+
+    &--empty {
+      padding: 8px 15px;
+      align-items: center;
+      background-color: #f3f6f8;
+      font-size: 12px;
+    }
+  }
+
+  &__listItem {
+    display: flex;
+    flex-direction: row;
+    margin: 12px 0;
+    font-size: 0.85em;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 20px;
+    border-top-left-radius: 0;
+    background-color: #f3f6f8;
+  }
+
+  &__titleWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__titleRight {
+    color: grey;
+  }
+
+  &__textWrapper a {
+    color: rgb(158, 148, 148) !important;
+    text-decoration: none !important;
+    font-size: 0.85em;
+
+    &:hover {
+      color: rgb(75, 189, 224) !important;
+      text-decoration: underline !important;
+    }
+  }
+
+  &__username {
+    font-weight: 500;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    margin-bottom: 8px;
+  }
+
+  &__action {
+    color: black;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 5px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background-color: transparent;
+  }
+}
+
+// .MuiFormControl-root,
+// .MuiTextField-root {
+//   border: 1px solid lightgray !important;
+//   border-radius: 20px !important;
+//   outline: none !important;
+// }
+.MuiOutlinedInput-notchedOutline {
+  border: none !important;
+}
+
+.MuiMenuItem-root {
+  font-size: 0.9rem !important;
+  color: rgb(43, 42, 42) !important;
+}

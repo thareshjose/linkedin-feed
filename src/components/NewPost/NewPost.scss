@@ -1,0 +1,139 @@
+.addPost {
+  display: flex;
+  margin-bottom: 10px;
+  background-color: white;
+  box-shadow: 0 0 10px -3px rgba(0, 0, 0, 0.2);
+  border: 1px solid lightgray;
+
+  &__button {
+    padding: 10px;
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    flex: 1 1;
+    border: none;
+    background-color: white;
+    border-radius: 3px;
+    color: grey;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #fefefe;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__btnLabel {
+    margin-left: 10px;
+    font-weight: 500;
+    font-size: 1.1em;
+    cursor: pointer;
+  }
+}
+
+.modal__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  color: grey;
+  border-bottom: 1px solid lightgray;
+}
+
+.modal__userDetails {
+  margin: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.modal__userName {
+  margin-left: 10px;
+  font-weight: bold;
+  color: grey;
+}
+
+.modal__container {
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 3px;
+  outline: none;
+}
+
+.modal__wrapper {
+  max-height: 50vh;
+  overflow-y: scroll;
+}
+
+.modal__newInput {
+  flex: 1;
+}
+
+.modal__newInput:first-child {
+  width: 100% !important;
+}
+
+.modal__postFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+.modal__postButton {
+  border-radius: 3px;
+  background-color: rgb(0, 96, 151);
+  color: white;
+  width: 60px;
+  padding: 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba(0, 96, 151, 0.8);
+  }
+}
+.modal__imageWrapper {
+  position: relative;
+}
+.modal__uploadedImage {
+  object-fit: contain;
+  width: 93%;
+  height: 80%;
+  margin: 20px;
+  background-color: #f3f6f8;
+}
+.modal__imageDeleteIcon {
+  position: absolute;
+  top: 8%;
+  right: 5%;
+  cursor: pointer;
+  background-color: grey;
+  border-radius: 50%;
+}
+
+.line {
+  border-top: 1px solid lightgray;
+  margin: 10px;
+}
+
+.modal__container {
+  width: 700px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media only screen and (max-width: 768px) {
+  .modal__container {
+    width: calc(80% - 50px);
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .modal__container {
+    width: calc(100% - 50px);
+  }
+}
