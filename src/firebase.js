@@ -8,6 +8,7 @@ const firebaseApp = firebase.initializeApp({
   storageBucket: "linkedin-feed.appspot.com",
   messagingSenderId: "949805590178",
   appId: "1:949805590178:web:781d9bad10b4ca70d419fb",
+  measurementId: "G-SRS55B32JN",
 });
 
 const db = firebaseApp.firestore();

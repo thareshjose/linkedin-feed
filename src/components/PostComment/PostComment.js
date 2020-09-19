@@ -37,7 +37,7 @@ const PostComment = memo(({ post, postId, hideComments }) => {
     }
 
     return () => unsubscribe();
-  }, []);
+  }, [postId]);
   const handleChange = (event) => {
     setComment(event.target.value);
   };

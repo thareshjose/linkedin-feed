@@ -17,7 +17,7 @@ const Feed = () => {
         }));
         dispatch({ type: "SET_POSTS", posts: posts });
       });
-  }, []);
+  }, [dispatch]);
 
   return (
     <div className="feed">

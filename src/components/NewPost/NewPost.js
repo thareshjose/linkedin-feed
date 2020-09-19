@@ -101,7 +101,7 @@ function NewPost() {
                 <div className="modal__imageWrapper">
                   <img
                     src={imageUrl}
-                    alt="image"
+                    alt="upload-img"
                     className="modal__uploadedImage"
                   />
                   <CloseIcon
