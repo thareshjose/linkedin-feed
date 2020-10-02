@@ -168,7 +168,9 @@ const PostComment = memo(({ post, postId, hideComments }) => {
       )}
 
       {comments.length === 0 && (
-        <p className="comments__list--empty">Be the first to comment on this</p>
+        <p className="comments__list--empty">
+          Be the first to comment on this.
+        </p>
       )}
     </div>
   );
